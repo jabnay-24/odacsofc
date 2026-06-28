@@ -133,9 +133,6 @@ nav h2 {
     transform: translateY(-5px);
 }
 
-.line {
-}
-
 #sp-1 {
     --i: 4;
 }
@@ -357,11 +354,11 @@ nav h2 {
 }
 
 .drawn-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    margin-top: 1rem;
+    margin: 1rem auto;
     gap: 1rem;
 }
 
@@ -765,6 +762,25 @@ hr {
     color: #edf7fb;
 }
 
+.logo-design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-design .card a {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.drawn-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
 @media screen and (max-width: 768px) {
     nav {
         position: sticky;
@@ -880,11 +896,6 @@ hr {
         align-items: stretch;
     }
 
-    .drawn-container img {
-        width: 100%;
-        height: auto;
-    }
-
     .logos img {
         width: 100%;
         margin-right: 0;
@@ -894,7 +905,8 @@ hr {
     /* ---- Service cards ---- */
     .skins-container,
     .pfp-service,
-    .drawn-cnt {
+    .drawn-cnt,
+    .drawn-card-container {
         grid-template-columns: 1fr;
         display: flex;
         flex-direction: column;
@@ -990,6 +1002,7 @@ hr {
         display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
+        justify-items: center;
         margin: 0 auto;
         width: 60vw;
         gap: 1rem;
