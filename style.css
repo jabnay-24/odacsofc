@@ -835,8 +835,16 @@ hr {
     }
 
     #about h2 {
-        font-size: 1.6rem;
+        font-size: clamp(1.1rem, 5.5vw, 1.6rem);
         padding: 0 1rem;
+        max-width: 100vw;
+        box-sizing: border-box;
+    }
+
+    #about h2 span,
+    #about h2 span::before {
+        max-width: calc(100vw - 2rem);
+        overflow-x: hidden;
     }
 
     #about p {
