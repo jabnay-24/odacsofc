@@ -1,0 +1,42 @@
+.theme-blue{
+    --bg:#edf7fb;
+    --surface:#ffffff;
+    --surface-2:#f2fbff;
+    --text:#0f1f2e;
+    --muted:#526779;
+    --border:#cfe2ee;
+    --accent:#087ea4;
+    --accent-strong:#075a7a;
+    --accent-soft:#dff5fb
+}
+-------------------------
+                <div class="card">
+                    <h4>🛡️| Tier 1</h4>
+                    <ul>
+                        <li>Up to 3 re-do's.</li>
+                        <li>No fixes after 3 re-do's.</li>
+                        <li>Screenshots of skin before payment.</li>
+                        <li>5-10 days turnaround.</li>
+                    </ul>
+                    <a href="https://discord.com/users/1427362857187545098">Order On Discord!</a>
+                </div>
+                <div class="card">
+                        <h4>🔱 | Tier 2</h4>
+                        <ul>
+                           <li>Up to 6 re-do's.</li>
+                           <li>1 fix after 6 re-do's.</li>
+                           <li>Screenshots of skin before payment.</li>
+                           <li>3-5 days turnaround.</li>
+                        </ul>
+                       <a href="https://discord.com/users/1427362857187545098">Order On Discord!</a>
+                </div>
+                <div class="card">
+                        <h4>⚜️ | Tier 3</h4>
+                        <ul>
+                            <li>Up to 10 re-do's.</li>
+                            <li>3 fixes after 10 re-do's.</li>
+                            <li>Screenshots of skin before payment.</li>
+                            <li>1-3 days turnaround.</li>
+                        </ul>
+                        <a href="https://discord.com/users/1427362857187545098">Order On Discord!</a>
+                </div>
