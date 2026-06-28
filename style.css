@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+[class^="ri-"], [class*=" ri-"] {
+    font-family: 'remixicon' !important;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -79,6 +83,10 @@ nav h2 {
     font-size: 1.8rem;
     color: #075a7a;
     padding: 0;
+    width: 1.8rem;
+    height: 1.8rem;
+    align-items: center;
+    justify-content: center;
 }
 
 #about {
@@ -87,7 +95,6 @@ nav h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 3rem;
 }
 
 #about h2 {
@@ -126,7 +133,8 @@ nav h2 {
     transform: translateY(-5px);
 }
 
-.line
+.line {
+}
 
 #sp-1 {
     --i: 4;
@@ -208,10 +216,6 @@ nav h2 {
     color: #1f242d;
 }
 
-#portfolio img {
-    width: 200px;
-}
-
 .group-one {
     display: flex;
     justify-content: center;
@@ -242,9 +246,10 @@ nav h2 {
 .carousel {
     margin: 20px auto;
     width: 100%;
-    border: 5px solid 9%;
     display: flex;
     overflow-x: hidden;
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent);
 }
 
 .carousel::-webkit-scrollbar {
@@ -365,6 +370,7 @@ nav h2 {
     border-radius: 10px;
     cursor: pointer;
     transition: .5s;
+    width: 200px;
 }
 
 .drawn-pfps img:hover {
@@ -545,8 +551,8 @@ hr {
 
 .pfps img {
     border-radius: 10px;
-    height: 200px;
-    width: auto;
+    height: 300px;
+    width: 300px;
     transition: .5s;
     cursor: pointer;
 }
@@ -579,6 +585,7 @@ hr {
     border-radius: 10px;
     cursor: pointer;
     transition: .5s;
+    width: 20rem;
 }
 
 .logos-pres img:hover {
@@ -701,33 +708,6 @@ hr {
     box-shadow: 0 6px 14px rgba(7, 90, 122, 0.3);
 }
 
-
-
-@media (max-width: 900px) {
-    .wet-smp {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 1.5rem;
-    }
-
-    .wet-smp p {
-        max-width: 100%;
-        text-align: left;
-    }
-
-    .wet-smp img {
-        margin: 0 auto;
-    }
-
-    .wet-smp-stats {
-        order: 2;
-    }
-
-    .wet-smp img {
-        order: 3;
-    }
-}
-
 #none {
     display: none;
 }
@@ -793,7 +773,7 @@ hr {
     }
 
     #hamburger {
-        display: block;
+        display: flex;
     }
 
     #hamburger:hover {
@@ -891,23 +871,24 @@ hr {
         width: 100%;
     }
 
-    .drawn-container {
-        flex-wrap: wrap;
+    #nine {
+        height: 100%;
+        align-self: stretch;
+    }
+
+    .pfps {
+        align-items: stretch;
     }
 
     .drawn-container img {
-        width: 40vw;
+        width: 100%;
         height: auto;
     }
 
-    .logos {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
     .logos img {
-        width: 35vw;
+        width: 100%;
         margin-right: 0;
+        margin-top: 1rem;
     }
 
     /* ---- Service cards ---- */
@@ -918,6 +899,7 @@ hr {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
     }
 
     .card {
@@ -1006,25 +988,29 @@ hr {
 
     .drawn-container {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin-left: 50%;
-        margin-right: 50%;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin: 0 auto;
+        width: 60vw;
+        gap: 1rem;
     }
 
     .logos {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin-left: 50%;
-        margin-right: 50%;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin: 0 auto;
+        width: 60vw;
         gap: 1rem;
-    }
-
-    #nine {
-        height: 220px;
     }
 
     #about h2 {
         font-size: 2rem;
+    }
+
+    #skinspres {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 }
 
