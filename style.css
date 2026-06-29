@@ -774,10 +774,8 @@ hr {
         font-size: 3rem;
     }
 
-    #about h2 span,
-    #about h2 span::before {
-        max-width: calc(100vw - 2rem);
-        overflow-x: hidden;
+    #about h2 {
+        text-align: center;
     }
 
     #about p {
