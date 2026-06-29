@@ -97,11 +97,6 @@ nav h2 {
     flex-direction: column;
 }
 
-#about h2 {
-    font-size: 33px;
-    text-align: center;
-}
-
 #about p {
     width: 50vw;
     text-align: center;
@@ -129,73 +124,19 @@ nav h2 {
     transition: .5s;
 }
 
+#about h2 {
+    color: #075a7a;
+    font-size: 3rem;
+}
+
 .btns a:hover {
     transform: translateY(-5px);
-}
-
-#sp-1 {
-    --i: 4;
-}
-
-#sp-2 {
-    --i: 3;
-}
-
-#sp-3 {
-    --i: 2;
-}
-
-#sp-4 {
-    --i: 1;
-}
-
-#about h2 span {
-    position: relative;
-    display: inline-block;
-    color: transparent;
-    -webkit-text-stroke: .7px #075a7a;
-    animation: display-text 16s linear infinite;
-    animation-delay: calc(-4s * var(--i));
-}
-
-@keyframes display-text {
-    25%,
-    100% {
-        display: none;
-    }
-}
-
-#about h2 span::before {
-    content: attr(data-text);
-    position: absolute;
-    width: 0;
-    border-right: 2px solid #075a7a;
-    color: #075a7a;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: fill-text 4s linear infinite;
-}
-
-@keyframes fill-text {
-    10%,
-    100% {
-        width: 0;
-    }
-    70%,
-    90% {
-        width: 100%;
-    }
-}
-
-#about h2 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    color: #075a7a;
 }
 
 #about p {
     width: 65vw;
     font-size: calc(1rem + 2px);
+    margin-top: 1rem;
 }
 
 #portfolio h2, #portfolio p {
@@ -779,11 +720,6 @@ hr {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    margin-top: 1rem;
-}
-
-.drawn-pfp-service {
-    margin-top: 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -831,14 +767,11 @@ hr {
 
     /* ---- About / Hero ---- */
     #about h1 {
-        font-size: 2.2rem;
+        font-size: 2.9rem;
     }
 
     #about h2 {
-        font-size: clamp(1.1rem, 5.5vw, 1.6rem);
-        padding: 0 1rem;
-        max-width: 100vw;
-        box-sizing: border-box;
+        font-size: 3rem;
     }
 
     #about h2 span,
@@ -1030,13 +963,17 @@ hr {
         gap: 1rem;
     }
 
-    #about h2 {
-        font-size: 2rem;
-    }
-
     #skinspres {
         margin-top: 1rem;
         margin-bottom: 1rem;
+    }
+
+    footer {
+        padding: 9rem;
+    }
+
+    footer h3 {
+        margin-bottom: 3.5rem;
     }
 }
 
@@ -1063,6 +1000,14 @@ footer i {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.drawn-pfp-service {
+    margin-top: 1rem;
+}
+
+.drawn-card-container {
+    margin-top: 1rem;
 }
 
 @keyframes spin {
